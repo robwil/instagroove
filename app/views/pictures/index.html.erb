@@ -9,15 +9,16 @@
     </tr>
   </thead>
 
-  <tbody>
+
     <% @pictures.each do |picture| %>
-      <tr>
-        <td><h1><%= picture.title %></h1></td>
-        <td><%= image_tag picture.pic.url %></td>
+
+        <h1><%= picture.title %></h1>
+        <p><%= image_tag picture.pic.url %></p>
+        <p>Likes: <%= picture.like %></p>
         <td><%= link_to 'Show', picture %></td>
         <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
         <td><%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+
     <% end %>
   </tbody>
 </table>
