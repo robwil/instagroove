@@ -4,3 +4,15 @@
 
 <%= link_to 'Edit', edit_picture_path(@picture) %> |
 <%= link_to 'Back', pictures_path %>
+
+
+<%= link_to "Add Comment", new_picture_comment_path(@picture) %>
+<ul id='comments'>
+  <% @picture.comments.each do |c| %>
+  <li>
+
+      <p><%= c.body  %></p>
+      <p>-<%= c.name %></p>
+    </li>
+    <% end %>
+  </ul>
