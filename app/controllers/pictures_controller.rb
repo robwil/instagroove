@@ -1,11 +1,13 @@
 class PicturesController < ApplicationController
   before_action :set_picture, only: [:show, :edit, :update, :destroy]
 
+
   # GET /pictures
   # GET /pictures.json
   def index
     @pictures = Picture.all
   end
+
 
   # GET /pictures/1
   # GET /pictures/1.json
@@ -71,4 +73,6 @@ class PicturesController < ApplicationController
     def picture_params
       params[:picture]
     end
+
+
 end

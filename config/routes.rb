@@ -1,5 +1,7 @@
 Instagroove::Application.routes.draw do
 
+  resources :likes
+
   root 'pictures#index'
 
 
