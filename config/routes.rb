@@ -1,5 +1,6 @@
 Instagroove::Application.routes.draw do
 
+  post "headshot/capture" => 'headshot#capture', :as => :headshot_capture
   resources :likes
 
   root 'pictures#index'

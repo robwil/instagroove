@@ -1,6 +1,6 @@
 class PicturesController < ApplicationController
   before_action :set_picture, only: [:show, :edit, :update, :destroy]
-
+  helper :headshot
 
   # GET /pictures
   # GET /pictures.json
