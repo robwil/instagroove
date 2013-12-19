@@ -14,7 +14,9 @@ group :production do
 end
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+group :development, :test do
+	gem 'sqlite3'
+end
 
 # Use SCSS for stylesheets
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
