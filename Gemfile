@@ -26,7 +26,6 @@ end
   gem 'coffee-rails'
 
   gem 'uglifier', '>= 1.0.3'
-  gem 'twitter-bootstrap-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
