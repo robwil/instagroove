@@ -7,16 +7,16 @@ gem 'headshot'
 gem 'simple_form'
 gem 'protected_attributes'
 
+# Heroku setup
+group :production do
+	gem "pg"
+	gem 'rails_12factor', group: :production
+end
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
 # Use SCSS for stylesheets
-
-
-
-
-
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
