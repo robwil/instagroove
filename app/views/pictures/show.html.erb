@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 <h1><%= @picture.title %></h1>
 <%= image_tag @picture.pic.url %>
-  <p>Likes: <%= @picture.likes.counter %>
+  <p>Likes: <%= @picture.likes.count %>
   <%= button_to '+1', likes_path(picture_id: @picture.id), method: :post %></p>
 
 <%= link_to 'Edit', edit_picture_path(@picture) %> |

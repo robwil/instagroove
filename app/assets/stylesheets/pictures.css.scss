@@ -1,3 +1,34 @@
-// Place all the styles related to the pictures controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#container {
+	max-width: 960px;
+}
+
+.item {
+	width: 150px;
+	float: left;
+	padding: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.pretty-color-0 {
+	border: 3px solid #62016D;
+}
+
+.pretty-color-1 {
+	border: 3px solid #910033;
+}
+
+.pretty-color-2 {
+	border: 3px solid #4B9500;
+}
+
+.pretty-color-3 {
+	border: 3px solid #8BA100;
+}
+
+.item img {
+	width: 100%;
+}

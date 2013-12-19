@@ -1,26 +1,23 @@
 <h1>Listing pictures</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+<div id="pictures-container">
 
+    <% pretty_color_i = 0 %>
+    <% @pictures.each_with_index do |picture, i| %>
 
-    <% @pictures.each do |picture| %>
-
+      <div class="item pretty-color-<%= i % 4 %>">
         <h1><%= picture.title %></h1>
         <p><%= image_tag picture.pic.url %></p>
         <%= link_to 'Show', picture %>
         <%= link_to 'Edit', edit_picture_path(picture) %>
         <%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
 
     <% end %>
 
+</div>
 
-<br>
+<div class="clearfix"></div>
+
 
 <%= link_to 'New Picture', new_picture_path %>
